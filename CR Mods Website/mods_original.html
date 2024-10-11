@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cosmic Reach Mods</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mods.css">
+</head>
+<body>
+<!-- Top Bar -->
+<script src="script.js"></script>
+<div class="topbar">
+    <div class="nav-buttons">
+        <a href="home.html"><button>Home</button></a>
+        <a href="mods.html"><button class="active">Mods</button></a>
+        <a href="about.html"><button>About</button></a>
+    </div>
+    <p class="centre-title"></p>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <input type="image" class="search-button" src="./images/svgs/Search_light.svg" alt="Search">
+    </div>
+</div>    
+<!-- Actual Page -->
+<div class="container">
+    <div class="mod-search-bar">
+        <nobr>
+        <input type="text" placeholder="Search mods...">
+        <input type="image" class="mod-search-button" src="./images/svgs/Search_dark.svg" alt="Search">
+        </nobr>
+    </div>
+
+    <div class="filters">
+        <div class="filter-group">
+            <button class="dropdown-btn">Category</button>
+            <div class="dropdown-content">
+                <label><input type="checkbox" value="adventure"> Adventure</label>
+                <label><input type="checkbox" value="utility"> Utility</label>
+                <label><input type="checkbox" value="cosmetic"> Cosmetic</label>
+            </div>
+        </div>
+    
+        <div class="filter-group">
+            <button class="dropdown-btn">Game Version</button>
+            <div class="dropdown-content">
+                <label><input type="checkbox" value="1.20"> 1.20</label>
+                <label><input type="checkbox" value="1.19"> 1.19</label>
+                <label><input type="checkbox" value="1.18"> 1.18</label>
+            </div>
+        </div>
+    
+        <div class="filter-group">
+            <button class="dropdown-btn">Sort By</button>
+            <div class="dropdown-content">
+                <label><input type="checkbox" value="popularity"> Popularity</label>
+                <label><input type="checkbox" value="newest"> Newest</label>
+                <label><input type="checkbox" value="updated"> Recently Updated</label>
+            </div>
+        </div>
+    </div>
+     
+
+    <div class="mod-cards">
+        <div class="mod-card">
+            <h3>Mod 1</h3> <!-- Name -->
+            <img src="https://placehold.co/256x256" class="mod-card-icon"></iframe> <!-- Icon -->
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <!-- Description -->
+            <p>Categories: Utility</p> <!-- Mod Categories -->
+            <p>Format: Data</p> <!-- Mod Format -->
+            <p>Version: 0.3.2-pre3</p> <!-- Mod Version -->
+        </div>
+        <div class="mod-card">
+            <h3>Mod 2</h3>
+            <img src="https://placehold.co/256x256" class="mod-card-icon"></iframe>
+            <hr>
+            <p>Mauris ante turpis, congue quis mauris et, aliquet ullamcorper lorem.</p>
+            <p>Categories: Adventure</p>
+            <p>Format: Puzzle</p>
+            <p>Version: 0.1.46</p>
+        </div>
+        <div class="mod-card">
+            <h3>Mod 3</h3>
+            <img src="https://placehold.co/256x256" class="mod-card-icon"></iframe>
+            <hr>
+            <p>Pellentesque sed risus lorem.</p>
+            <p>Categories: Cosmetic</p>
+            <p>Format: Quilt</p>
+            <p>Version: 0.2.5</p>
+        </div>
+    </div>
+</div> 
+</body>
+</html>

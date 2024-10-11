@@ -1,0 +1,189 @@
+/* Top Bar CSS */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.nav-buttons button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.nav-buttons button:hover {
+    background-color: #555;
+}
+
+.nav-buttons button.active {
+    background-color: #a22f4a;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 10px;
+}
+
+.search-button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #555;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 10px;
+}
+
+.search-bar input[type="image"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.centre-title {
+    text-align: center;
+}
+
+/* Mods Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: radial-gradient(#cecece 1px, transparent 0);
+    background-size: 25px 25px;
+    background-position: -19px -19px;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.mod-search-bar {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-right: 80px;
+    vertical-align: middle;
+}
+.mod-search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.mod-search-button {
+    max-width: 20px;
+    max-height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: -15px;
+}
+.mod-search-button:hover {
+    background-color: #d1d1d1;
+}
+div.filter-box {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    background-color: #ffffff;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-style: solid;
+    border-radius: 10px;
+}
+div.content {
+    margin-left: 220px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+/* Filters */
+/* General Styles */
+.filters {
+    display: flex;
+    flex-direction: column; /* Stack filters vertically */
+    gap: 10px; /* Add space between filter groups */
+    margin-bottom: 20px; /* Add space below the filters */
+}
+
+.filter-group {
+    position: relative;
+    display: inline-block; /* Change this to block for stacking */
+    width: 100%; /* Full width for the dropdown button */
+}
+
+/* Dropdown Button Styles */
+.dropdown-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Ensure the button takes full width */
+    text-align: left;
+}
+
+.dropdown-button:hover {
+    background-color: #555;
+}
+
+/* Dropdown Content Styles */
+.dropdown-content {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: max-height 0.1s ease-in-out, padding 0.1s ease-in-out;
+}
+
+.dropdown-content label {
+    display: block;
+    padding: 5px 0;
+    padding-left: 10px;
+}
+
+.dropdown-content label:hover {
+    background-color: #f1f1f1;
+}
+
+/* When dropdown is active */
+.filter-group.active .dropdown-content {
+    padding: 10px;
+    max-height: 500px; /* Adjust this height based on content */
+}

@@ -1,4 +1,9 @@
 /* Top Bar CSS */
+@font-face {
+    font-family: blackboysmoped;
+    src: url("fonts/BLACKBOYSONMOPEDS.ttf");
+}
+
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -70,16 +75,13 @@
 
 .centre-title {
     text-align: center;
+    font-family: blackboysmoped;
+    color: white;
+    font-size: 200%;
+    margin: 0;
 }
 
 /* Mods Page */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    background-image: radial-gradient(#cecece 1px, transparent 0);
-    background-size: 25px 25px;
-    background-position: -19px -19px;
-}
 .container {
     max-width: 1200px;
     margin: 20px auto;
@@ -89,7 +91,7 @@ body {
 }
 .mod-search-bar {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
     padding-right: 80px;
     vertical-align: middle;
 }
@@ -111,34 +113,81 @@ body {
     background-color: #d1d1d1;
 }
 div.filter-box {
-    margin: 10px;
+    margin: 12px 0;
     padding: 10px;
     width: 200px;
     background-color: #ffffff;
-    position: fixed;
     height: 100%;
     overflow: auto;
     border-style: solid;
     border-radius: 10px;
+    float: left;
+    height: 913px;
 }
-div.content {
+div.content-mods {
     margin-left: 220px;
+    margin-right: auto;
     padding: 1px 16px;
-    height: 1000px;
+    height: 1100px;
+}
+/* General Pages */
+@font-face {
+    font-family: afacadflux;
+    src: url("fonts/AFACADFLUX.ttf");
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: radial-gradient(#cecece 1px, transparent 0);
+    background-size: 25px 25px;
+    background-position: -19px -19px;
+}
+.centre {
+    text-align: center;
+}
+.afacad_flux {
+    font-family: afacadflux;
+}
+.middle-but-not-centre {
+    text-align: center;
+    position: relative;
+    left: -100px;
+}
+/* Mod Cards */
+.mod-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.mod-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.mod-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.mod-card p {
+    font-size: 14px;
+    color: #777;
 }
 /* Filters */
 /* General Styles */
 .filters {
     display: flex;
-    flex-direction: column; /* Stack filters vertically */
-    gap: 10px; /* Add space between filter groups */
-    margin-bottom: 20px; /* Add space below the filters */
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px
 }
 
 .filter-group {
     position: relative;
-    display: inline-block; /* Change this to block for stacking */
-    width: 100%; /* Full width for the dropdown button */
+    display: inline-block;
+    width: 100%;
 }
 
 /* Dropdown Button Styles */
@@ -150,7 +199,7 @@ div.content {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 100%; /* Ensure the button takes full width */
+    width: 100%;
     text-align: left;
 }
 
@@ -168,14 +217,15 @@ div.content {
     border-radius: 4px;
     padding: 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 89%;
     transition: max-height 0.1s ease-in-out, padding 0.1s ease-in-out;
+    overflow-y: auto;
 }
 
 .dropdown-content label {
     display: block;
     padding: 5px 0;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 .dropdown-content label:hover {
@@ -185,5 +235,5 @@ div.content {
 /* When dropdown is active */
 .filter-group.active .dropdown-content {
     padding: 10px;
-    max-height: 500px; /* Adjust this height based on content */
+    max-height: 500px;
 }

@@ -11,7 +11,7 @@ dropdownButtons.forEach(button => {
 
         // If active, expand the dropdown; otherwise, collapse it
         if (parent.classList.contains('active')) {
-            dropdownContent.style.maxHeight = dropdownContent.scrollHeight + "px";
+            dropdownContent.style.maxHeight = 200 + "px";
             dropdownContent.style.padding = "10px";
         } else {
             dropdownContent.style.maxHeight = 0;

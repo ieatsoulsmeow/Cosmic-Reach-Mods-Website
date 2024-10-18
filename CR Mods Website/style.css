@@ -135,6 +135,10 @@ div.content-mods {
     font-family: afacadflux;
     src: url("fonts/AFACADFLUX.ttf");
 }
+@font-face {
+    font-family: sourcecodepro;
+    src: url("fonts/SOURCECODEPRO.ttf");
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -145,14 +149,108 @@ body {
 .centre {
     text-align: center;
 }
-.afacad_flux {
+.centre-div {
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.font-afacad_flux {
     font-family: afacadflux;
+}
+.font-sourcecodepro {
+    font-family: sourcecodepro;
 }
 .middle-but-not-centre {
     text-align: center;
     position: relative;
     left: -100px;
 }
+.hr_improved {
+    width:300px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+}
+/* About Page */
+.p_control {
+    max-width: 800px;
+    margin: auto;
+}
+.content-about {
+    max-width: 1200px;
+    height: 1500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e9e9e99c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Home Page */
+/* Scrolling Stuff */
+.scroll-box {
+    width: 1000px;
+    height: 120px;
+    overflow: hidden;
+    /*border: 5px solid red;*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.scroll-list {
+    height: 1.2em;
+    position: absolute;
+    top: 0;
+    animation: ticker 10s infinite;
+}
+.scroll-list li {
+    list-style: none;
+}
+.fade-coloured-text {
+    -webkit-font-smoothing: antialiased;
+    color:black;
+    background-image: linear-gradient(to top, #a22f4a, #f6aebf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 600;
+    margin-bottom: 1em;
+    line-height: 120%;
+    margin-top: -1em;
+}
+@keyframes ticker {
+    0%, 13% {
+        top: 0;
+    }
+    17%, 30% {
+        top: -1.2em;
+    }
+    33%, 46% {
+        top: -2.4em;
+    }
+    50%, 63% {
+        top: -3.6em;
+    }
+    66%, 79% {
+        top: -4.8em;
+    }
+    83%, 96% {
+        top: -6em;
+    }
+    99.99997%, 99.99998% {
+        top: -7.2em;
+    }
+    99.99999% {
+        top: 0;
+    }
+}
+
+/* Other Home Stuff*/
+
 /* Mod Cards */
 .mod-cards {
     display: grid;
